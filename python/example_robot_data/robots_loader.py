@@ -129,6 +129,13 @@ class ANYmalLoader(RobotLoader):
     ref_posture = "standing"
     free_flyer = True
 
+class LaikagoLoader(RobotLoader):
+    path = 'laikago_description'
+    urdf_subpath = "urdf"
+    urdf_filename = "laikago.urdf"
+    free_flyer = True
+
+    
 
 class ANYmalKinovaLoader(ANYmalLoader):
     urdf_filename = "anymal-kinova.urdf"
@@ -537,6 +544,7 @@ ROBOTS = {
     'icub_reduced': ICubReducedLoader,
     'iris': IrisLoader,
     'kinova': KinovaLoader,
+    'laikago': LaikagoLoader,
     'panda': PandaLoader,
     'romeo': RomeoLoader,
     'simple_humanoid': SimpleHumanoidLoader,
