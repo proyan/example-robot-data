@@ -135,7 +135,6 @@ class LaikagoLoader(RobotLoader):
     urdf_filename = "laikago.urdf"
     free_flyer = True
 
-    
 
 class ANYmalKinovaLoader(ANYmalLoader):
     urdf_filename = "anymal-kinova.urdf"
