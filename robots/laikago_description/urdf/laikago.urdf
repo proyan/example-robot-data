@@ -36,7 +36,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/trunk.dae" scale="1 1 1"/>
+        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/trunk.obj" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
     </visual>
@@ -64,7 +64,7 @@
     <visual>
       <origin rpy="3.14159265359 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/hip.dae" scale="1 1 1"/>
+        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/hip.obj" scale="1 1 1"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -106,7 +106,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/thigh_mirror.dae" scale="1 1 1"/>
+        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/thigh_mirror.obj" scale="1 1 1"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -134,7 +134,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/calf.dae" scale="1 1 1"/>
+        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/calf.obj" scale="1 1 1"/>
       </geometry>
       <material name="silver"/>
     </visual>
@@ -186,7 +186,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/hip.dae" scale="1 1 1"/>
+        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/hip.obj" scale="1 1 1"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -228,7 +228,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/thigh.dae" scale="1 1 1"/>
+        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/thigh.obj" scale="1 1 1"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -256,7 +256,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/calf.dae" scale="1 1 1"/>
+        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/calf.obj" scale="1 1 1"/>
       </geometry>
       <material name="silver"/>
     </visual>
@@ -308,7 +308,7 @@
     <visual>
       <origin rpy="3.14159265359 3.14159265359 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/hip.dae" scale="1 1 1"/>
+        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/hip.obj" scale="1 1 1"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -350,7 +350,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/thigh_mirror.dae" scale="1 1 1"/>
+        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/thigh_mirror.obj" scale="1 1 1"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -378,7 +378,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/calf.dae" scale="1 1 1"/>
+        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/calf.obj" scale="1 1 1"/>
       </geometry>
       <material name="silver"/>
     </visual>
@@ -430,7 +430,7 @@
     <visual>
       <origin rpy="0 3.14159265359 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/hip.dae" scale="1 1 1"/>
+        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/hip.obj" scale="1 1 1"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -472,7 +472,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/thigh.dae" scale="1 1 1"/>
+        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/thigh.obj" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
@@ -499,7 +499,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/calf.dae" scale="1 1 1"/>
+        <mesh filename="package://example-robot-data/robots/laikago_description/meshes/calf.obj" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
