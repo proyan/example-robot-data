@@ -51,6 +51,7 @@ class RobotLoader(object):
     urdf_filename = ''
     srdf_filename = ''
     sdf_filename = ''
+    sdf_root_link_name = ''
     urdf_subpath = 'robots'
     srdf_subpath = 'srdf'
     sdf_subpath = ''
@@ -66,17 +67,26 @@ class RobotLoader(object):
                 raise AttributeError("Please choose between URDF *or* SDF")
             df_path = join(self.path, self.urdf_subpath, self.urdf_filename)
             builder = RobotWrapper.BuildFromURDF
+            if self.model_path is None:
+                self.model_path = getModelPath(df_path, self.verbose)
+            self.df_path = join(self.model_path, df_path)
+            self.robot = builder(self.df_path, [join(self.model_path, '../..')],
+                                 pin.JointModelFreeFlyer() if self.free_flyer else None)
+
+            
         else:
             df_path = join(self.path, self.sdf_subpath, self.sdf_filename)
             try:
                 builder = RobotWrapper.BuildFromSDF
+                if self.model_path is None:
+                    self.model_path = getModelPath(df_path, self.verbose)
+                self.df_path = join(self.model_path, df_path)
+                self.robot = builder(self.df_path, package_dirs=[join(self.model_path, '../..')],
+                                     root_joint=pin.JointModelFreeFlyer() if self.free_flyer else None,
+                                     root_link_name=self.sdf_root_link_name)
+                
             except AttributeError:
                 raise ImportError("Building SDF models require pinocchio >= 3.0.0")
-        if self.model_path is None:
-            self.model_path = getModelPath(df_path, self.verbose)
-        self.df_path = join(self.model_path, df_path)
-        self.robot = builder(self.df_path, [join(self.model_path, '../..')],
-                             pin.JointModelFreeFlyer() if self.free_flyer else None)
 
         if self.srdf_filename:
             self.srdf_path = join(self.model_path, self.path, self.srdf_subpath, self.srdf_filename)
@@ -160,12 +170,13 @@ def loadANYmal(withArm=None):
 
 class CassieLoader(RobotLoader):
     path = 'cassie_description'
-    sdf_filename = "cassie_v2.sdf"
+    # sdf_filename = "cassie_v2.sdf"
+    sdf_filename = "cassie.sdf"
     sdf_subpath = 'robots'
     srdf_filename = "cassie_v2.srdf"
     ref_posture = "standing"
     free_flyer = True
-
+    sdf_root_link_name = "pelvis"
 
 class TalosLoader(RobotLoader):
     path = 'talos_data'
